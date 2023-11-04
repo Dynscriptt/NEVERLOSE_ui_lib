@@ -1,9 +1,6 @@
 --THIS UI LIBRARY WAS NOT MADE BY ME
 --THIS WAS MADE BY 3345-c-a-t-s-u-s
 
---THIS UI LIBRARY WAS NOT MADE BY ME
---THIS WAS MADE BY 3345-c-a-t-s-u-s
-
 local LocalPlayer = game:GetService('Players').LocalPlayer;
 local Mouse = LocalPlayer:GetMouse();
 local InputService = game:GetService('UserInputService');
