@@ -1,6 +1,9 @@
 --THIS UI LIBRARY WAS NOT MADE BY ME
 --THIS WAS MADE BY 3345-c-a-t-s-u-s
 
+--THIS UI LIBRARY WAS NOT MADE BY ME
+--THIS WAS MADE BY 3345-c-a-t-s-u-s
+
 local LocalPlayer = game:GetService('Players').LocalPlayer;
 local Mouse = LocalPlayer:GetMouse();
 local InputService = game:GetService('UserInputService');
@@ -500,40 +503,6 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 
 	UICorner_7.CornerRadius = UDim.new(0, 2)
 	UICorner_7.Parent = UserData
-
-	UserImage.Name = "UserImage"
-	UserImage.Parent = UserData
-	UserImage.AnchorPoint = Vector2.new(0.5, 0.5)
-	UserImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	UserImage.BackgroundTransparency = 1.000
-	UserImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	UserImage.BorderSizePixel = 0
-	UserImage.Position = UDim2.new(0.150000006, 0, 0.5, 0)
-	UserImage.Size = UDim2.new(0.949999988, 0, 0.949999988, 0)
-	UserImage.SizeConstraint = Enum.SizeConstraint.RelativeYY
-	UserImage.ZIndex = 5
-	UserImage.Image = game:GetService('Players'):GetUserThumbnailAsync(LocalPlayer.UserId,Enum.ThumbnailType.HeadShot,Enum.ThumbnailSize.Size150x150)
-
-	UICorner_8.CornerRadius = UDim.new(0.5, 0)
-	UICorner_8.Parent = UserImage
-
-	UserName.Name = "UserName"
-	UserName.Parent = UserData
-	UserName.AnchorPoint = Vector2.new(0, 0.5)
-	UserName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	UserName.BackgroundTransparency = 1.000
-	UserName.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	UserName.BorderSizePixel = 0
-	UserName.Position = UDim2.new(0.31400001, 0, 0.5, 0)
-	UserName.Size = UDim2.new(0.717000008, 0, 0.649999976, 0)
-	UserName.ZIndex = 5
-	UserName.Font = Enum.Font.SourceSansSemibold
-	UserName.Text = LocalPlayer.DisplayName or "https://httpbin.org/get"
-	UserName.TextColor3 = Color3.fromRGB(255, 255, 255)
-	UserName.TextScaled = true
-	UserName.TextSize = 14.000
-	UserName.TextWrapped = true
-	UserName.TextXAlignment = Enum.TextXAlignment.Left
 
 	function WindowFunctinos:AddTabLabel(Label)
 		local TabTitle = Instance.new("TextLabel")
