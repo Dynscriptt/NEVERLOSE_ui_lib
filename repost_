@@ -1350,7 +1350,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 				ValueText.TextWrapped = true
 
                 ValueText.FocusLostConnect(function()
-                    callback(TextBoxInput.Text)
+                    callback(ValueText.Text)
                 end)
 			end
 
