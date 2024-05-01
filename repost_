@@ -1349,7 +1349,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 				ValueText.TextSize = 14.000
 				ValueText.TextWrapped = true
 
-                ValueText.FocusLostConnect(function()
+                ValueText.FocusLost:Connect(function()
                     callback(ValueText.Text)
                 end)
 			end
