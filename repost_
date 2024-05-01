@@ -1266,7 +1266,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 				return KeybindFunctions
 			end
 
-            function sectionfunc:AddKeybind(KeybindNameString,Default,callback)
+            function sectionfunc:addTextbox(KeybindNameString,Default,callback)
                 local callback = call or function() end
 
 				local Keybind = Instance.new("Frame")
@@ -1352,8 +1352,6 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
                 ValueText.FocusLostConnect(function()
                     callback(TextBoxInput.Text)
                 end)
-
-				return KeybindFunctions
 			end
 
 			function sectionfunc:AddSlider(SliderNameString,Min,Max,Default,callback)
