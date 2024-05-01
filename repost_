@@ -1267,7 +1267,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 			end
 
             function sectionfunc:addTextbox(KeybindNameString,Default,callback)
-                local callback = call or function() end
+                local callback = callback or function() end
 
 				local Keybind = Instance.new("Frame")
 				local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
