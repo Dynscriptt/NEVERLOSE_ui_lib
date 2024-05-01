@@ -339,7 +339,6 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 	end)
 
 	ScreenGui.Parent = CoreGui
-	ScreenGui.Name = "Valyxor"
 	ScreenGui.ResetOnSpawn = false
 	ScreenGui.IgnoreGuiInset = true
 	ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
@@ -1263,6 +1262,96 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 					UpdateText() 
 					callback(l)
 				end
+
+				return KeybindFunctions
+			end
+
+            function sectionfunc:AddKeybind(KeybindNameString,Default,callback)
+                local callback = call or function() end
+
+				local Keybind = Instance.new("Frame")
+				local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+				local UICorner = Instance.new("UICorner")
+				local LabelText = Instance.new("TextLabel")
+				local BrindText = Instance.new("Frame")
+				local UICorner_2 = Instance.new("UICorner")
+				local UIStroke = Instance.new("UIStroke")
+				local ValueText = Instance.new("TextBox")
+
+				Keybind.Name = "Keybind"
+				Keybind.Parent = Section
+				Keybind.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Keybind.BackgroundTransparency = 1.000
+				Keybind.BorderColor3 = Color3.fromRGB(0, 0, 0)
+				Keybind.BorderSizePixel = 0
+				Keybind.Position = UDim2.new(0.0500000231, 0, 0.601014614, 0)
+				Keybind.Size = UDim2.new(0.899999976, 0, -0.351014495, 0)
+				Keybind.ZIndex = 5
+
+				UIAspectRatioConstraint.Parent = Keybind
+				UIAspectRatioConstraint.AspectRatio = 7.000
+				UIAspectRatioConstraint.AspectType = Enum.AspectType.ScaleWithParentSize
+
+				UICorner.CornerRadius = UDim.new(0, 3)
+				UICorner.Parent = Keybind
+
+				LabelText.Name = "LabelText"
+				LabelText.Parent = Keybind
+				LabelText.AnchorPoint = Vector2.new(0.5, 0.5)
+				LabelText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				LabelText.BackgroundTransparency = 1.000
+				LabelText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+				LabelText.BorderSizePixel = 0
+				LabelText.Position = UDim2.new(0.296665907, 0, 0.499999106, 0)
+				LabelText.Size = UDim2.new(0.593582749, 0, 0.75, 0)
+				LabelText.ZIndex = 6
+				LabelText.Font = Enum.Font.SourceSansSemibold
+				LabelText.Text = KeybindNameString or ''
+				LabelText.TextColor3 = Color3.fromRGB(255, 255, 255)
+				LabelText.TextScaled = true
+				LabelText.TextSize = 14.000
+				LabelText.TextWrapped = true
+				LabelText.TextXAlignment = Enum.TextXAlignment.Left
+				LabelText.TextTransparency=.3
+				BrindText.Name = "BrindText"
+				BrindText.Parent = Keybind
+				BrindText.AnchorPoint = Vector2.new(1, 0.5)
+				BrindText.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+				BrindText.BackgroundTransparency = 0.500
+				BrindText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+				BrindText.BorderSizePixel = 0
+				BrindText.Position = UDim2.new(0.998, 0, 0.5, 0)
+				BrindText.Size = UDim2.new(0.150000006, 0, 0.5, 0)
+				BrindText.ZIndex = 6
+
+				UICorner_2.CornerRadius = UDim.new(0, 3)
+				UICorner_2.Parent = BrindText
+
+				UIStroke.Thickness = 0.500
+				UIStroke.Color = NEVERLOSE.Themes.StrokeColor
+				UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+				UIStroke.Parent = BrindText
+
+				ValueText.Name = "ValueText"
+				ValueText.Parent = BrindText
+				ValueText.AnchorPoint = Vector2.new(0.5, 0.5)
+				ValueText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				ValueText.BackgroundTransparency = 1.000
+				ValueText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+				ValueText.BorderSizePixel = 0
+				ValueText.Position = UDim2.new(0.5, 0, 0.5, 0)
+				ValueText.Size = UDim2.new(0.980000019, 0, 0.998000026, 0)
+				ValueText.ZIndex = 6
+				ValueText.Font = Enum.Font.SourceSansSemibold
+				ValueText.Text = gt(Default)
+				ValueText.TextColor3 = Color3.fromRGB(255, 255, 255)
+				ValueText.TextScaled = true
+				ValueText.TextSize = 14.000
+				ValueText.TextWrapped = true
+
+                ValueText.FocusLostConnect(function()
+                    callback(TextBoxInput.Text)
+                end)
 
 				return KeybindFunctions
 			end
