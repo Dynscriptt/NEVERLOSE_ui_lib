@@ -1343,7 +1343,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 				ValueText.Size = UDim2.new(0.980000019, 0, 0.998000026, 0)
 				ValueText.ZIndex = 6
 				ValueText.Font = Enum.Font.SourceSansSemibold
-				ValueText.Text = gt(Default)
+				ValueText.Text = ""
 				ValueText.TextColor3 = Color3.fromRGB(255, 255, 255)
 				ValueText.TextScaled = true
 				ValueText.TextSize = 14.000
