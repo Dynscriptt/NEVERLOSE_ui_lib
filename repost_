@@ -7,7 +7,6 @@ local InputService = game:GetService('UserInputService');
 local TextService = game:GetService('TextService');
 local TweenService = game:GetService('TweenService');
 local CoreGui = game:FindFirstChild('CoreGui') or LocalPlayer.PlayerGui;
-local skibidisigma = 1
 
 local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end);
 
@@ -164,7 +163,7 @@ end
 function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 	local WindowFunctinos={}
 	local ToggleUI=false
-	local ooldsize=UICustomSize or UDim2.new(0.200000003, 200, 0.200000003, 200)
+	local ooldsize=UICustomSize or UDim2.new(0.200000003, 200, 0.200000003, 300)
 	local Tabs={}
 
 	local ScreenGui = Instance.new("ScreenGui")
