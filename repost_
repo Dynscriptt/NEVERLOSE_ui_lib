@@ -209,7 +209,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 			TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 			TextLabel.TextScaled = true
 			TextLabel.TextSize = 14.000
-			TextLabel.TextStrokeColor3 = Color3.fromRGB(0, 255, 255)
+			TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 			TextLabel.TextStrokeTransparency = 0.900
 			TextLabel.TextWrapped = true
 			TextLabel.TextXAlignment = Enum.TextXAlignment.Left
@@ -1980,7 +1980,7 @@ function NEVERLOSE:KeySystem(TitleName,LinkKey,callback)
 	Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Title.TextScaled = true
 	Title.TextSize = 14.000
-	Title.TextStrokeColor3 = Color3.fromRGB(0, 255, 255)
+	Title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 	Title.TextStrokeTransparency = 0.860
 	Title.TextWrapped = true
 
