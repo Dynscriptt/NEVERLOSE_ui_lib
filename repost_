@@ -674,12 +674,12 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 			if headd2text then
 				TweenService:Create(headd2text,TweenInfo.new(.1),{
 					TextTransparency = 0.1,
-					TextStrokeTransparency=.95
+					TextStrokeTransparency=1
 				}):Play()
 				task.wait(.11)
 				TweenService:Create(headd2text,TweenInfo.new(.1),{
 					TextTransparency = 0,
-					TextStrokeTransparency=.9
+					TextStrokeTransparency=1
 				}):Play()
 			end
 		end
@@ -1981,7 +1981,7 @@ function NEVERLOSE:KeySystem(TitleName,LinkKey,callback)
 	Title.TextScaled = true
 	Title.TextSize = 14.000
 	Title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-	Title.TextStrokeTransparency = 0.860
+	Title.TextStrokeTransparency = 1
 	Title.TextWrapped = true
 
 	PasteKey.Name = "PasteKey"
