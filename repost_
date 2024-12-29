@@ -40,7 +40,7 @@ local function ConnectButtonEffect(UIFrame, TextButton, ImageLabel, UIStroke, in
 
 	UIFrame.InputEnded:Connect(function(Input)
 		if Input.UserInputType == Enum.UserInputType.Touch or Input.UserInputType == Enum.UserInputType.MouseMovement then
-			TweenService:Create(UIStroke,TweenInfo.new(0.2),{Color = OldColor}):Play()
+			TweenService:Create(UI,TweenInfo.new(0.2),{Color = OldColor}):Play()
 		end
 	end)
 end
@@ -116,7 +116,7 @@ local NEVERLOSE = {
 		MainColor = Color3.fromRGB(255, 140, 0),
 		MainColorDrop = Color3.fromRGB(65, 54, 31),
 		SectionColor = Color3.fromRGB(26, 26, 26),
-		StrokeColor = Color3.fromRGB(50, 50, 50),
+		Color = Color3.fromRGB(50, 50, 50),
 		ButtonBlackgroundColor = Color3.fromRGB(26, 26, 26)
 	}
 }
@@ -210,7 +210,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 			TextLabel.TextScaled = true
 			TextLabel.TextSize = 14.000
 			TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-			TextLabel.TextStrokeTransparency = 0.900
+			TextLabel.TextStrokeTransparency = 1
 			TextLabel.TextWrapped = true
 			TextLabel.TextXAlignment = Enum.TextXAlignment.Left
 			TextLabel.RichText=true
@@ -232,7 +232,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 			TweenService:Create(TabButtons,TweenInfo.new(0.3),{Position=UDim2.new(.008,0,0.143,0)}):Play()
 
 			if headd2text then
-				TweenService:Create(headd2text,TweenInfo.new(0.3),{TextTransparency=0,TextStrokeTransparency=0.900}):Play()
+				TweenService:Create(headd2text,TweenInfo.new(0.3),{TextTransparency=0,TextStrokeTransparency=1}):Play()
 			end
 
 			TweenService:Create(UserName,TweenInfo.new(0.3),{TextTransparency=0,TextStrokeTransparency=1}):Play()
@@ -412,7 +412,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 	HeadName.TextScaled = true
 	HeadName.TextSize = 14.000
 	HeadName.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
-	HeadName.TextStrokeTransparency = 0.720
+	HeadName.TextStrokeTransparency = 1
 	HeadName.TextWrapped = true
 
 	TabButtons.Name = "TabButtons"
