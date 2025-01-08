@@ -393,7 +393,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 	DropShadow.ZIndex = 3
 	DropShadow.Image = "rbxassetid://6014261993"
 	DropShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
-	DropShadow.ImageTransparency = 0.860
+	DropShadow.ImageTransparency = 1
 	DropShadow.ScaleType = Enum.ScaleType.Slice
 	DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
 
