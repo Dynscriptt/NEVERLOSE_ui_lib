@@ -135,7 +135,7 @@ function NEVERLOSE:Theme(name)
 		NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(2, 5, 22)
 	end
 
-	if name == "orange" then
+	if name == "orange4" then
 	    NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(25, 25, 25)  -- Dark background with a warm touch
 	    NEVERLOSE.Themes.BlackColor = Color3.fromRGB(35, 35, 35)  -- Darker gray for general elements
 	    NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(55, 55, 55)  -- Slightly lighter dark gray for header
