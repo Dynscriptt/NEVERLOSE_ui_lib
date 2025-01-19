@@ -135,7 +135,7 @@ function NEVERLOSE:Theme(name)
 		NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(2, 5, 22)
 	end
 
-	if name == "orange1" then
+	if name == "orange" then
 	    NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(29, 29, 29)  -- Dark background with slight warmth
 	    NEVERLOSE.Themes.BlackColor = Color3.fromRGB(45, 45, 45)  -- Darker accent color
 	    NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(53, 53, 53)  -- Slightly lighter dark tone for header
@@ -146,20 +146,6 @@ function NEVERLOSE:Theme(name)
 	    NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(63, 48, 36)  -- Dark brownish stroke to complement orange theme
 	    NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(44, 44, 44)  -- Dark button background
 	end
-
-	if name == "orange2" then
-	    NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(34, 34, 34)  -- Slightly darker background with a touch of warmth
-	    NEVERLOSE.Themes.BlackColor = Color3.fromRGB(50, 50, 50)  -- A rich dark gray with an orange accent
-	    NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(70, 70, 70)  -- Dark gray with slight warmth for header
-	    NEVERLOSE.Themes.TraceColor = Color3.fromRGB(35, 42, 53)  -- Deep accent color with an earthy tone
-	    NEVERLOSE.Themes.MainColor = Color3.fromRGB(255, 165, 0)  -- Vibrant orange, bright and fresh
-	    NEVERLOSE.Themes.MainColorDrop = Color3.fromRGB(230, 130, 0)  -- A slightly darker orange for depth
-	    NEVERLOSE.Themes.SectionColor = Color3.fromRGB(40, 40, 40)  -- Darker background for sections
-	    NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(72, 55, 42)  -- Dark, earthy brownish-orange for stroke
-	    NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(51, 51, 51)  -- Dark, smooth button background
-	end
-
-
 
 	if name == "nightly" then
 		NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(43, 43, 43)
