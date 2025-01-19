@@ -812,7 +812,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 			UICorner.CornerRadius = UDim.new(0, 3)
 			UICorner.Parent = Section
 
-			UIStroke.Color = NEVERLOSE.Themes.StrokeColor
+			UIStroke.Color = NEVERLOSE.Themes.StrokeColor or Color3.fromRGB(3, 35, 50)
 			UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 			UIStroke.Parent = Section
 
