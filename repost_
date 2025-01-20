@@ -404,6 +404,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 
 
 	Frame_2.Parent = Frame
+	warn(NEVERLOSE.Themes.BlackColor)
 	Frame_2.BackgroundColor3 = NEVERLOSE.Themes.BlackColor
 	Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	Frame_2.BorderSizePixel = 0
@@ -2371,7 +2372,7 @@ function NEVERLOSE:Notification()
 				pcall(function()
 					task.wait(1.3)
 					local tween = TweenService:Create(Countdown,TweenInfo.new(tonumber(countdown) or 3,Enum.EasingStyle.Linear),{Size=UDim2.new(1,0,0.1,0)
-					})them
+					})
 
 					tween:Play()
 
