@@ -122,8 +122,9 @@ local NEVERLOSE = {
 }
 
 function NEVERLOSE:Theme(name)
+	print(name)
 	name = tostring(name or "original"):lower()
-
+	print(name, "2")
 	if name == "original" then
 		NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(1, 17, 33)
 		NEVERLOSE.Themes.BlackColor = Color3.fromRGB(9, 9, 19)
