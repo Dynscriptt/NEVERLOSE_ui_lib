@@ -2371,7 +2371,7 @@ function NEVERLOSE:Notification()
 				pcall(function()
 					task.wait(1.3)
 					local tween = TweenService:Create(Countdown,TweenInfo.new(tonumber(countdown) or 3,Enum.EasingStyle.Linear),{Size=UDim2.new(1,0,0.1,0)
-					})
+					})them
 
 					tween:Play()
 
