@@ -1,9 +1,6 @@
 --THIS UI LIBRARY WAS NOT MADE BY ME
 --THIS WAS MADE BY 3345-c-a-t-s-u-s
 
-
---e
-
 local LocalPlayer = game:GetService('Players').LocalPlayer;
 local Mouse = LocalPlayer:GetMouse();
 local InputService = game:GetService('UserInputService');
@@ -116,7 +113,7 @@ local NEVERLOSE = {
 		BlackColor = Color3.fromRGB(16, 16, 16),
 		HeaderColor = Color3.fromRGB(47, 47, 47),
 		TraceColor = Color3.fromRGB(100, 100, 100),
-		MainColor = Color3.fromRGB(255, 140, 0),
+		MainColor = Color3.fromRGB(255, 255, 255),
 		MainColorDrop = Color3.fromRGB(65, 54, 31),
 		SectionColor = Color3.fromRGB(26, 26, 26),
 		Color = Color3.fromRGB(50, 50, 50),
@@ -126,6 +123,7 @@ local NEVERLOSE = {
 
 function NEVERLOSE:Theme(name)
 	name = tostring(name or "original"):lower()
+
 	if name == "original" then
 		NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(1, 17, 33)
 		NEVERLOSE.Themes.BlackColor = Color3.fromRGB(9, 9, 19)
@@ -137,57 +135,6 @@ function NEVERLOSE:Theme(name)
 		NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(3, 35, 50)
 		NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(2, 5, 22)
 	end
-
-	    if name == "anomic" then
-	        NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(173, 138, 119)
-		NEVERLOSE.Themes.BlackColor = Color3.fromRGB(9, 9, 19)
-		NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(173, 138, 119)
-		NEVERLOSE.Themes.TraceColor = Color3.fromRGB(0, 34, 44)
-		NEVERLOSE.Themes.MainColor = Color3.fromRGB(173, 138, 119)
-		NEVERLOSE.Themes.MainColorDrop = Color3.fromRGB(173, 138, 119)
-		NEVERLOSE.Themes.SectionColor = Color3.fromRGB(0, 17, 35)
-		NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(3, 35, 50)
-		NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(2, 5, 22)
-	    end
-
-	if name == "orange4" then
-	    NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(25, 25, 25)  -- Dark background with a warm touch
-	    NEVERLOSE.Themes.BlackColor = Color3.fromRGB(35, 35, 35)  -- Darker gray for general elements
-	    NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(55, 55, 55)  -- Slightly lighter dark gray for header
-	    NEVERLOSE.Themes.TraceColor = Color3.fromRGB(45, 55, 65)  -- Muted dark teal-blue for accent
-	    NEVERLOSE.Themes.MainColor = Color3.fromRGB(255, 120, 0)  -- Bright and vibrant orange as the main color
-	    NEVERLOSE.Themes.MainColorDrop = Color3.fromRGB(210, 100, 0)  -- A darker orange for secondary areas
-	    NEVERLOSE.Themes.SectionColor = Color3.fromRGB(40, 40, 40)  -- Darker gray for sections
-	    NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(80, 50, 30)  -- Earthy brownish-orange stroke
-	    NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(50, 50, 50)  -- Dark button background for contrast
-	end
-
-
-	if name == "orange3" then
-	    NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(20, 20, 20)  -- Deep dark background
-	    NEVERLOSE.Themes.BlackColor = Color3.fromRGB(33, 33, 33)  -- Slightly lighter for general elements
-	    NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(50, 50, 50)  -- Darker gray for header
-	    NEVERLOSE.Themes.TraceColor = Color3.fromRGB(40, 48, 58)  -- Muted deep blue-gray for accent
-	    NEVERLOSE.Themes.MainColor = Color3.fromRGB(255, 102, 0)  -- Bright orange for primary UI elements
-	    NEVERLOSE.Themes.MainColorDrop = Color3.fromRGB(204, 85, 0)  -- Slightly darker orange for secondary areas
-	    NEVERLOSE.Themes.SectionColor = Color3.fromRGB(60, 60, 60)  -- Dark gray for section backgrounds
-	    NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(95, 58, 22)  -- Earthy brown-orange stroke color
-	    NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(40, 40, 40)  -- Dark button background
-	end
-
-
-	if name == "orange2" then
-	    NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(38, 38, 38)  -- Dark background with a warm undertone
-	    NEVERLOSE.Themes.BlackColor = Color3.fromRGB(52, 52, 52)  -- Darker gray, adds depth
-	    NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(66, 66, 66)  -- Slightly lighter gray for header
-	    NEVERLOSE.Themes.TraceColor = Color3.fromRGB(34, 41, 50)  -- Deep, earthy tone for accents
-	    NEVERLOSE.Themes.MainColor = Color3.fromRGB(255, 140, 0)  -- Bright orange for main color
-	    NEVERLOSE.Themes.MainColorDrop = Color3.fromRGB(210, 105, 30)  -- Darker orange, adds contrast
-	    NEVERLOSE.Themes.SectionColor = Color3.fromRGB(50, 50, 50)  -- Dark sections for visual clarity
-	    NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(80, 60, 40)  -- Deep brownish-orange stroke for accent
-	    NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(45, 45, 45)  -- Dark button background
-	end
-
 
 	if name == "orange" then
 	    NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(29, 29, 29)  -- Dark background with slight warmth
@@ -224,6 +171,29 @@ function NEVERLOSE:Theme(name)
 		NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(28, 28, 28)
 		NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(13, 13, 13)
 	end
+    
+    if name == "anomic" then
+        NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(115,92,79) -- the background of the second left part
+		NEVERLOSE.Themes.BlackColor = Color3.fromRGB(173, 138, 119) --  the background of the second right part
+		NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(255,255,255) -- header (the second title background)
+		NEVERLOSE.Themes.TraceColor = Color3.fromRGB(255,255,255) -- separators
+		NEVERLOSE.Themes.MainColor = Color3.fromRGB(255,255,255) -- tab btn
+		NEVERLOSE.Themes.MainColorDrop = Color3.fromRGB(250, 210, 100) --  toggles ON/IFF color
+		NEVERLOSE.Themes.SectionColor = Color3.fromRGB(115,92,79) -- sections color
+		NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(255,0,0) -- Sections Stroke Color
+		NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(185, 174, 167) -- btns background color
+    end
+	if name == "booga" then
+        NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(0,0,0) -- the background of the second left part
+		NEVERLOSE.Themes.BlackColor = Color3.fromRGB(0,0,0) --  the background of the second right part
+		NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(255,255,255) -- header (the second title background)
+		NEVERLOSE.Themes.TraceColor = Color3.fromRGB(255,255,255) -- separators
+		NEVERLOSE.Themes.MainColor = Color3.fromRGB(255,255,255) -- tab btn
+		NEVERLOSE.Themes.MainColorDrop = Color3.fromRGB(255, 255, 111) --  toggles ON/IFF color
+		NEVERLOSE.Themes.SectionColor = Color3.fromRGB(0,0,0) -- sections background color
+		NEVERLOSE.Themes.StrokeColor = Color3.fromRGB(255,0,0) -- Sections Stroke Color
+		NEVERLOSE.Themes.ButtonBlackgroundColor = Color3.fromRGB(185, 174, 167) -- btns background color
+	end
 end
 
 function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
@@ -235,6 +205,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 	local ScreenGui = Instance.new("ScreenGui")
 	local Frame = Instance.new("Frame")
 	local UICorner = Instance.new("UICorner")
+    local Stroke_my_dick = Instance.new("UIStroke")
 	local Frame_2 = Instance.new("Frame")
 	local UICorner_2 = Instance.new("UICorner")
 	local Frame_3 = Instance.new("Frame")
@@ -425,6 +396,12 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 	TweenService:Create(Frame,TweenInfo.new(1,Enum.EasingStyle.Quint),{Size=ooldsize}):Play()
 
 	UICorner.Parent = Frame
+
+    Stroke_my_dick.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+    Stroke_my_dick.Color = Color3.fromRGB(255, 255, 255)
+    Stroke_my_dick.Thickness = 3
+    Stroke_my_dick.Parent = Frame
+
 
 	Frame_2.Parent = Frame
 	Frame_2.BackgroundColor3 = NEVERLOSE.Themes.BlackColor
@@ -812,7 +789,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 			UICorner.CornerRadius = UDim.new(0, 3)
 			UICorner.Parent = Section
 
-			UIStroke.Color = NEVERLOSE.Themes.StrokeColor or Color3.fromRGB(3, 35, 50)
+			UIStroke.Color = NEVERLOSE.Themes.StrokeColor
 			UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 			UIStroke.Parent = Section
 
