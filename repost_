@@ -173,6 +173,7 @@ function NEVERLOSE:Theme(name)
 	end
     
     if name == "anomic" then
+		print('found bro')
         NEVERLOSE.Themes.BlackgroundColor = Color3.fromRGB(115,92,79) -- the background of the second left part
 		NEVERLOSE.Themes.BlackColor = Color3.fromRGB(173, 138, 119) --  the background of the second right part
 		NEVERLOSE.Themes.HeaderColor = Color3.fromRGB(255,255,255) -- header (the second title background)
@@ -404,7 +405,6 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 
 
 	Frame_2.Parent = Frame
-	warn(NEVERLOSE.Themes.BlackColor)
 	Frame_2.BackgroundColor3 = NEVERLOSE.Themes.BlackColor
 	Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	Frame_2.BorderSizePixel = 0
