@@ -1,6 +1,9 @@
 --THIS UI LIBRARY WAS NOT MADE BY ME
 --THIS WAS MADE BY 3345-c-a-t-s-u-s
 
+if getgenv().IsUiExecuted == true then warn("UI ALREADY INJECTED.") return end
+getgenv().IsUiExecuted = true
+
 local LocalPlayer = game:GetService('Players').LocalPlayer;
 local Mouse = LocalPlayer:GetMouse();
 local InputService = game:GetService('UserInputService');
@@ -377,6 +380,7 @@ function NEVERLOSE:AddWindow(NameScriptHub,Text,UICustomSize)
 	end)
 
 	ScreenGui.Parent = CoreGui
+	ScreenGui.Name = "NEVERLOSE"
 	ScreenGui.ResetOnSpawn = false
 	ScreenGui.IgnoreGuiInset = true
 	ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
@@ -2384,6 +2388,11 @@ function NEVERLOSE:Notification()
 	end
 
 	return Notification_
+end
+
+function NEVERLOSE:Kill()
+	getgenv().IsUiExecuted = false
+	game.CoreGui:FindFirstChild("NEVERLOSE"):Destroy()
 end
 
 task.spawn(function()
