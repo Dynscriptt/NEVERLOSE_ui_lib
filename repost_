@@ -107,6 +107,9 @@ local function GetImageData(name,image)
 	if name == "user" then
 		image.Image = "rbxassetid://10494577250"
 	end
+	if name == "tools" then
+		image.Image = "rbxassetid://12403104134"
+	end
 end
 
 local NEVERLOSE = {
